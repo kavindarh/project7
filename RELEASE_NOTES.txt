@@ -1,0 +1,71 @@
+-----------------------------------
+java-cli version 1.5.9 (Fri May 29 09:55:15 CDT 2020)
+-----------------------------------
+
+- Add support for "finished with warnings" return message
+  from the SWAMP.   This indicates, that for no-build,
+  that not all compilations completed.  This allows
+  viewing and coollection of whatever results are
+  available in a no-build project.
+
+-----------------------------------
+java-cli version 1.5.8 (Fri Jan  3 11:17:01 CST 2020)
+-----------------------------------
+
+- Support 2xx HTTP return codes for newer versions of laravel;
+  the SWAMP uses laravel on the server side;  older laravel
+  versions always returned 200 for success.  Future 
+  laravel (and swamp)  versions will require this
+  backward-compatible change to work correctly.
+
+-----------------------------------
+java-cli version 1.5.7 (Fri Sep 28 16:34:02 CDT 2018)
+-----------------------------------
+
+- Added hasPermission API
+
+-----------------------------------
+java-cli version 1.5.6 (Thu Sep 27 16:39:36 CDT 2018)
+-----------------------------------
+
+- Fixed bug with tool without permissions
+
+-----------------------------------
+java-cli version 1.5.5 (Wed Aug 29 07:03:34 CDT 2018)
+-----------------------------------
+
+  - Now accepts package-exclude-paths, package-version-notes in package.conf, these will be added to 'Exclude Paths' and 'Version notes' respectively
+
+-----------------------------------
+java-cli version 1.5.4 (Tue Aug  7 14:29:49 CDT 2018)
+-----------------------------------
+  - Fixed bug with checking availablity of the platforms specified on the CLI
+
+-----------------------------------
+java-cli version 1.5.3 (Wed Jul 25 12:16:02 CDT 2018)
+-----------------------------------
+  - Cookie policy set to CookieSpecs.STANDAND. This fixes failures with SiB instances that are not current, yet max-age is vaild.
+
+  - Removed code for RWS server, which now is removed.
+
+-----------------------------------
+java-cli version 1.5.2 (Mon Jun 18 08:00:22 CDT 2018)
+-----------------------------------
+
+  - Converts SWAMP web api server's URI to URL 
+  - Report self-signed certificates exceptions correctly
+
+-----------------------------------
+java-cli version 1.5.0 (Thu May 10 9:22:12 CST 2017)
+-----------------------------------
+  - CLI now does not require UUIDs, it has options to work with (package|tool|project) names and versions
+
+  - Supports assessments with a particular tool version, using <toolname>::<version> syntax
+
+  - Has option to work with local keystores instead of System
+
+  - Has option to take proxy from CLI
+
+  - Merged Java-API code into Java-CLI
+
+
